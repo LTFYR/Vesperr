@@ -1,0 +1,23 @@
+﻿  @using Vesperr.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@model Services
+@{
+    Layout = "_Layout";
+}
+@{
+    ViewData["Title"] = "Detail";
+}
+
+ <div class="container">
+     <div class="row">
+         <div style="border:2px solid blue; border-radius:3%" class="col-md-6 col-lg-12 d-flex align-items-center mb-5 mb-lg-0 text-center">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                      <i style="color:blue" class="@Model.Icon"></i>
+              <h4 style="color:blue;border-radius:100px;" class="title">@Model.Title</h4>
+              <p class="description">@Model.Description</p>
+              </div>
+              </div>
+     </div>
+ </div>
+
